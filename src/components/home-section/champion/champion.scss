@@ -1,0 +1,40 @@
+@use "../../../scss/" as *;
+@use "sass:math";
+
+.champion {
+	&-list {
+		display: flex;
+		flex-wrap: wrap; /* Permite que las tarjetas se envuelvan en múltiples líneas */
+		justify-content: flex-start; /* Ajusta la alineación horizontal a la izquierda */
+
+		.swiper-slide {
+			display: flex;
+			flex-direction: column;
+			width: 20%;
+			pointer-events: visible;
+			overflow: visible;
+			transform: translateX(200px);
+			opacity: 0;
+			transition: transform 0.5s ease, opacity 0.5s ease;
+			transition-delay: 0s;
+
+			@media screen and (max-width: 600px) {
+				width: 100%; /* Ajusta el ancho a 100% en pantallas pequeñas */
+			}
+		}
+	}
+
+	&.active &-list {
+		.swiper-slide {
+			transform: translateX(0);
+			opacity: 1;
+			width: 20%;
+
+			@for $i from 1 through 30 {
+				&:nth-child(#{$i}) {
+					transition-delay: #{math.div($i, 2)}s;
+				}
+			}
+		}
+	}
+}
