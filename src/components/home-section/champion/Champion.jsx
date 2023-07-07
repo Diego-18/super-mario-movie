@@ -15,22 +15,22 @@ const Champion = (props) => {
 			contentClassName="overlay"
 			bgImage={bg2}
 		>
-			<div className="container relative">
-				<div className="champion-list">
-					<Swiper
-						slidesPerView={"auto"}
-						spaceBetween={0}
-						grabCursor={true}
-						nested={true}
-					>
-						{championsData.map((item, index) => (
-							<SwiperSlide key={index}>
-								<ChampionCard item={item} id={index} />
-							</SwiperSlide>
-						))}
-					</Swiper>
-				</div>
+			{/* <div className="container"> */}
+			<div className="champion-list">
+				<Swiper
+					slidesPerView={"auto"}
+					spaceBetween={0}
+					grabCursor={true}
+					nested={true}
+				>
+					{championsData.map((item, index) => (
+						<SwiperSlide key={index}>
+							<ChampionCard item={item} id={index} />
+						</SwiperSlide>
+					))}
+				</Swiper>
 			</div>
+			{/* </div> */}
 		</HomeSection>
 	);
 };

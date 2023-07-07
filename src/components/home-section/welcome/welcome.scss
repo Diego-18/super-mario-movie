@@ -8,6 +8,11 @@
 	&__info {
 		width: 50%;
 		height: 100%;
+
+		@media screen and (max-width: 600px) {
+			width: 100%;
+			padding: 0rem 1rem;
+		}
 	}
 
 	&__img {
@@ -18,15 +23,42 @@
 	&__info {
 		@include flex(flex-start, flex-end);
 
+		@media screen and (max-width: 600px) {
+			width: 100%;
+		}
+
 		&__content {
 			padding-left: 2rem;
 
+			@media screen and (max-width: 600px) {
+				padding-left: 0rem;
+			}
+
 			.description {
 				font-size: 1rem;
+
+				@media screen and (max-width: 600px) {
+					width: 100%;
+				}
+			}
+
+			.btns {
+				@media screen and (max-width: 600px) {
+					width: 100%;
+					margin: 1rem !important;
+				}
 			}
 
 			.btns > * ~ * {
 				margin-left: 1rem;
+
+				@media screen and (max-width: 600px) {
+					margin: 1rem !important;
+				}
+			}
+
+			@media screen and (max-width: 600px) {
+				width: 100%;
 			}
 		}
 	}
@@ -44,6 +76,10 @@
 				padding-bottom: 2rem !important ;
 				display: block;
 			}
+		}
+
+		@media screen and (max-width: 600px) {
+			display: none;
 		}
 	}
 }

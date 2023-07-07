@@ -22,10 +22,11 @@ const ChampionCard = (props) => {
 		newNode.id = `champ-img-${props.id}`;
 
 		setTimeout(() => {
-			newNode.style.width = "auto";
+			newNode.style.width = "30rem";
 			newNode.style.height = "100%";
 			newNode.style.top = 0;
 			newNode.style.left = 0;
+			newNode.style.display = "none";
 		});
 
 		document.body.appendChild(newNode);
@@ -48,7 +49,7 @@ const ChampionCard = (props) => {
 						style={{ backgroundImage: `url(${item.bg})` }}
 					></div>
 				</div>
-				<img src={item.img} alt="" />
+				<img src={item.img} alt="" className="mobile-hidden" />
 				<div className="name">{item.name}</div>
 			</div>
 		</div>

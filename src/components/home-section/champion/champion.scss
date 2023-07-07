@@ -4,8 +4,8 @@
 .champion {
 	&-list {
 		display: flex;
-		flex-wrap: wrap; /* Permite que las tarjetas se envuelvan en múltiples líneas */
-		justify-content: flex-start; /* Ajusta la alineación horizontal a la izquierda */
+		flex-wrap: wrap;
+		justify-content: flex-start;
 
 		.swiper-slide {
 			display: flex;
@@ -19,7 +19,7 @@
 			transition-delay: 0s;
 
 			@media screen and (max-width: 600px) {
-				width: 100%; /* Ajusta el ancho a 100% en pantallas pequeñas */
+				width: 100% !important;
 			}
 		}
 	}

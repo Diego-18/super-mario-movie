@@ -24,6 +24,11 @@
 		padding: 2rem 0;
 		position: relative;
 
+		@media screen and (max-width: 600px) {
+			margin: 2rem !important;
+			width: 95% !important;
+		}
+
 		.name {
 			font-size: 5rem;
 			text-transform: uppercase;
@@ -33,11 +38,12 @@
 			width: 95%;
 			padding-left: 1rem;
 			border-left: 2px solid $main-color;
-			margin: 1rem 0;
+			margin: 16rem 0;
 		}
 
 		.video {
 			margin: 1rem 0;
+			display: none;
 		}
 
 		iframe {
@@ -55,6 +61,10 @@
 
 		&:hover {
 			transform: rotate(180deg);
+			-webkit-transform: rotate(180deg);
+			-moz-transform: rotate(180deg);
+			-ms-transform: rotate(180deg);
+			-o-transform: rotate(180deg);
 		}
 
 		img {
