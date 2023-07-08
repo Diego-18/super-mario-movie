@@ -1,6 +1,6 @@
 import { useRef, useEffect } from "react";
 
-import { bg3, trailerImg } from "../../../assets/images";
+import { bg3, trailerImg, flower } from "../../../assets/images";
 import HomeSection from "../HomeSection";
 
 import "./trailer.scss";
@@ -25,6 +25,7 @@ const Trailer = (props) => {
 			<div className="trailer__content__info">
 				<div className="title">
 					<span>Trailer of the</span>
+					<img src={flower} alt="flower" className="img-flower" />
 					<h2 className="main-color">Film</h2>
 				</div>
 				<div className="video">

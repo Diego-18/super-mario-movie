@@ -29,6 +29,7 @@
 
 		&__content {
 			padding-left: 2rem;
+			margin: 0 auto !important;
 
 			@media screen and (max-width: 600px) {
 				padding-left: 0rem;
@@ -42,10 +43,31 @@
 				}
 			}
 
+			.mushroom-img-1 {
+				width: 10%;
+				width: 10%;
+				margin: 1rem 15rem !important;
+
+				@media screen and (max-width: 600px) {
+					display: none;
+				}
+			}
+
+			.mushroom-img-2 {
+				display: none;
+
+				@media screen and (max-width: 600px) {
+					display: flex;
+					width: 10%;
+					width: 10%;
+					margin: 1rem auto;
+				}
+			}
+
 			.btns {
 				@media screen and (max-width: 600px) {
 					width: 100%;
-					margin: 1rem !important;
+					margin: 0rem auto !important;
 				}
 			}
 

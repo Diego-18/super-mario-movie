@@ -14,7 +14,7 @@
 	position: relative;
 	pointer-events: none;
 
-	img {
+	.character {
 		max-width: 100% !important;
 		position: relative;
 		opacity: 0;
@@ -24,6 +24,11 @@
 				display: none;
 			}
 		}
+	}
+
+	.musroom-card {
+		width: 10%;
+		height: 10%;
 	}
 
 	&:hover img {

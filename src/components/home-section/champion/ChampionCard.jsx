@@ -1,5 +1,6 @@
 import { useRef } from "react";
 import "./champion-card.scss";
+import { mushroom } from "../../../assets/images";
 
 const ChampionCard = (props) => {
 	const cardRef = useRef(null);
@@ -49,7 +50,11 @@ const ChampionCard = (props) => {
 						style={{ backgroundImage: `url(${item.bg})` }}
 					></div>
 				</div>
-				<img src={item.img} alt="" className="mobile-hidden" />
+				<img
+					src={item.img}
+					alt=""
+					className="character mobile-hidden"
+				/>
 				<div className="name">{item.name}</div>
 			</div>
 		</div>
