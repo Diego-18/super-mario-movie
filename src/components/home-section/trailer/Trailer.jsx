@@ -33,7 +33,10 @@ const Trailer = (props) => {
 						ref={iframeRef}
 						width="100%"
 						title="trailer"
-						src="https://youtu.be/9vBwfIxAXwE"
+						src="https://www.youtube.com/embed/HAwXhRh40Co"
+						frameborder="0"
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+						allowfullscreen
 					></iframe>
 				</div>
 			</div>
