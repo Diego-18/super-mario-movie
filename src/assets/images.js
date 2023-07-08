@@ -29,6 +29,8 @@ import bgLargeBowser from "./images/bowser-bg-large.jpg";
 import closeIcon from "./images/two-sword.png";
 
 import trailerImg from "./images/trailer-img.png";
+import mushroom from "./images/mushroom.png";
+import flower from "./images/flower.png";
 
 export {
 	logo,
@@ -56,4 +58,6 @@ export {
 	bgLargeMario,
 	bgLargeBowser,
 	trailerImg,
+	mushroom,
+	flower,
 };

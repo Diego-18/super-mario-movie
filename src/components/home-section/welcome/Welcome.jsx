@@ -6,7 +6,14 @@ import Button from "../../button/Button";
 
 import hoverEffect from "hover-effect";
 
-import { bg1, luigi, mario, peach, distortion } from "../../../assets/images";
+import {
+	bg1,
+	luigi,
+	mario,
+	peach,
+	distortion,
+	mushroom,
+} from "../../../assets/images";
 
 const champImgs = [mario, peach, luigi];
 
@@ -66,8 +73,9 @@ const Welcome = (props) => {
 			<div className="welcome__info relative">
 				<div className="welcome__info__content">
 					<div className="title">
-						<span>Welcome To</span>
+						<span>Welcome To</span>{" "}
 						<h2 className="main-color">Mushroom Kingdom</h2>
+						<img src={mushroom} className="mushroom-img-2" />
 					</div>
 					<div className="description m-t-4">
 						The Mushroom Kingdom is a vibrant and fantastical world
@@ -89,6 +97,7 @@ const Welcome = (props) => {
 					<div className="btns m-t-4">
 						<Button className="btn-main">PLAY NOW</Button>
 						<Button className="btn-second">GET STARTED</Button>
+						<img src={mushroom} className="mushroom-img-1" />
 					</div>
 				</div>
 			</div>
