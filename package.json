@@ -2,7 +2,7 @@
 	"name": "landing-page-mario-movie",
 	"version": "0.0.0",
 	"scripts": {
-		"dev": "vite",
+		"dev": "vite --host --port=3000",
 		"build": "vite build",
 		"serve": "vite preview"
 	},
@@ -16,5 +16,8 @@
 	"devDependencies": {
 		"@vitejs/plugin-react": "^1.0.0",
 		"vite": "^2.6.4"
+	},
+	"optionalDependencies": {
+		"esbuild-linux-64": "*"
 	}
 }
